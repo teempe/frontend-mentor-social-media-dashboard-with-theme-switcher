@@ -1,0 +1,10 @@
+.container {
+    width: 100vw;
+    max-width: 37.5rem;
+    background-color: var(--color-body-bg);
+    overflow-x: hidden;
+
+    @include media-screen-min($bp-desktop) {
+        max-width: 144rem;
+    }
+}

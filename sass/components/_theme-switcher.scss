@@ -1,0 +1,14 @@
+.theme-switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-screen-min($bp-desktop) {
+        gap: 1.3rem;
+    }
+
+    &__title {
+        font-weight: var(--fw-bold);
+        color: var(--color-text-regular);
+    }
+}

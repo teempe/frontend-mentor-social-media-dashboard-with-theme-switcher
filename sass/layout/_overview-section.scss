@@ -1,0 +1,31 @@
+.overview-section {
+    padding: 0rem 2.4rem 4.5rem;
+
+    @include media-screen-min($bp-desktop) {
+        padding: 0rem 16.5rem 4.5rem;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: var(--fw-bold);
+        color: var(--color-text-heading-2);
+        margin-bottom: 2.7rem;
+
+        @include media-screen-min($bp-desktop) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        @include media-screen-min($bp-desktop) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 3rem;
+            row-gap: 2.4rem;
+        }
+    }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header__heading">
+                    <h1 class="header__title">Social Media Dashboard</h1>
+                    <p class="header__subtitle">Total Followers: 23,004</p>
+                </div>
+                
+                <hr class="header__hr">
+
+                <div class="theme-switcher">
+                    <p class="theme-switcher__title">Dark Mode</p>
+                    <label class="switch">
+                        <input type="checkbox" class="switch__checkbox">
+                        <span class="switch__slider"></span>
+                    </label>
+                </div>
+            </header>
+
+            <section class="followers-section">
+                <h3 class="visually-hidden">Social media followers section</h3>
+
+                <section class="card followers-card card--facebook">
+                    <h3 class="visually-hidden">Facebook profile followers</h3>
+                    <p class="followers-card__user">@nathanf</p>
+                    <div class="followers-card__stats">
+                        <p class="followers-card__counter">1987</p>
+                        <p class="followers-card__description">Followers</p>
+                    </div>
+                    <p class="stats-change stats-change--up">12 Today</p>
+                </section>
+
+                <section class="card followers-card card--twitter">
+                    <h3 class="visually-hidden">Twitter profile followers</h3>
+                    <p class="followers-card__user">@nathanf</p>
+                    <div class="followers-card__stats">
+                        <p class="followers-card__counter">1044</p>
+                        <p class="followers-card__description">Followers</p>
+                    </div>
+                    <p class="stats-change stats-change--up">99 Today</p>
+                </section>
+
+                <section class="card followers-card card--instagram">
+                    <h3 class="visually-hidden">Instagram profile followers</h3>
+                    <p class="followers-card__user">@realnathanf</p>
+                    <div class="followers-card__stats">
+                        <p class="followers-card__counter">11k</p>
+                        <p class="followers-card__description">Followers</p>
+                    </div>
+                    <p class="stats-change stats-change--up">1099 Today</p>
+                </section>
+
+                <section class="card followers-card card--youtube">
+                    <h3 class="visually-hidden">Youtube profile followers</h3>
+                    <p class="followers-card__user">Nathan F.</p>
+                    <div class="followers-card__stats">
+                        <p class="followers-card__counter">8239</p>
+                        <p class="followers-card__description">Subscribers</p>
+                    </div>
+                    <p class="stats-change stats-change--up">144 Today</p>
+                </section>
+            </section>
+
+            <section class="overview-section">
+                <h2 class="overview-section__title">Overview - Today</h2>
+
+                <div class="overview-section__content">
+                    <section class="card overview-card card--facebook">
+                        <h3 class="visually-hidden">Facebook overview</h3>
+                        <div class="overview-card__row overview-card__row--top">
+                            <p class="overview-card__title">Page Views</p>
+                            <div class="overview-card__logo"></div>
+                        </div>
+                        <div class="overview-card__row overview-card__row--bottom">
+                            <p class="overview-card__counter">87</p>
+                            <p class="stats-change stats-change--up">3%</p>
+                        </div>
+                    </section>
+
+                    <section class="card overview-card card--facebook">
+                        <h3 class="visually-hidden">Facebook overview</h3>
+                        <div class="overview-card__row overview-card__row--top">
+                            <p class="overview-card__title">Likes</p>
+                            <div class="overview-card__logo"></div>
+                        </div>
+                        <div class="overview-card__row overview-card__row--bottom">
+                            <p class="overview-card__counter">52</p>
+                            <p class="stats-change stats-change--down">2%</p>
+                        </div>
+                    </section>
+
+                    <section class="card overview-card card--instagram">
+                        <h3 class="visually-hidden">Instagram overview</h3>
+                        <div class="overview-card__row overview-card__row--top">
+                            <p class="overview-card__title">Likes</p>
+                            <div class="overview-card__logo"></div>
+                        </div>
+                        <div class="overview-card__row overview-card__row--bottom">
+                            <p class="overview-card__counter">5462</p>
+                            <p class="stats-change stats-change--up">2257%</p>
+                        </div>
+                    </section>
+
+                    <section class="card overview-card card--instagram">
+                        <h3 class="visually-hidden">Instagram overview</h3>
+                        <div class="overview-card__row overview-card__row--top">
+                            <p class="overview-card__title">Profile Views</p>
+                            <div class="overview-card__logo"></div>
+                        </div>
+                        <div class="overview-card__row overview-card__row--bottom">
+                            <p class="overview-card__counter">52k</p>
+                            <p class="stats-change stats-change--up">1375%</p>
+                        </div>
+                    </section>
+
+                    <section class="card overview-card card--twitter">
+                        <h3 class="visually-hidden">Twitter overview</h3>
+                        <div class="overview-card__row overview-card__row--top">
+                            <p class="overview-card__title">Retweets</p>
+                            <div class="overview-card__logo"></div>
+                        </div>
+                        <div class="overview-card__row overview-card__row--bottom">
+                            <p class="overview-card__counter">117</p>
+                            <p class="stats-change stats-change--up">303%</p>
+                        </div>
+                    </section>
+
+                    <section class="card overview-card card--twitter">
+                        <h3 class="visually-hidden">Twitter overview</h3>
+                        <div class="overview-card__row overview-card__row--top">
+                            <p class="overview-card__title">Likes</p>
+                            <div class="overview-card__logo"></div>
+                        </div>
+                        <div class="overview-card__row overview-card__row--bottom">
+                            <p class="overview-card__counter">507</p>
+                            <p class="stats-change stats-change--up">553%</p>
+                        </div>
+                    </section>
+
+                    <section class="card overview-card card--youtube">
+                        <h3 class="visually-hidden">Youtube overview</h3>
+                        <div class="overview-card__row overview-card__row--top">
+                            <p class="overview-card__title">Likes</p>
+                            <div class="overview-card__logo"></div>
+                        </div>
+                        <div class="overview-card__row overview-card__row--bottom">
+                            <p class="overview-card__counter">107</p>
+                            <p class="stats-change stats-change--down">19%</p>
+                        </div>
+                    </section>
+
+                    <section class="card overview-card card--youtube">
+                        <h3 class="visually-hidden">Youtube overview</h3>
+                        <div class="overview-card__row overview-card__row--top">
+                            <p class="overview-card__title">Total Views</p>
+                            <div class="overview-card__logo"></div>
+                        </div>
+                        <div class="overview-card__row overview-card__row--bottom">
+                            <p class="overview-card__counter">1407</p>
+                            <p class="stats-change stats-change--down">12%</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <script type="module" src="./js/script.js"></script>
+    </body>
+</html>

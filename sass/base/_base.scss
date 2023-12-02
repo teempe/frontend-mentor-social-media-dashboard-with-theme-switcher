@@ -1,0 +1,54 @@
+:root {
+    --color-body-bg: #FFF;
+
+    --color-header-bg: #F7F9FF;
+    --color-header-hr: #848BAB;
+
+    --color-switch-btn-bg: #AEB3CB;
+    --color-switch-btn-bg-active: linear-gradient(225deg, #40DB82, #388FE7);
+    --color-switch-btn-slider: #FFF;
+    --color-switch-btn-slider-active: #FFF;
+
+    --color-card-bg: #F1F3FA;
+    --color-card-bg-hover: #E1E4F0;
+
+    --color-text-heading-1: #1D1F29;
+    --color-text-heading-2: #63687D;
+    --color-text-regular: #63687D;
+
+    --ff-body: 'Inter', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+// Breakpoints
+$bp-desktop: 90em; // 1440px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--color-body-bg);
+    overflow-x: hidden;
+    // center content on page
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    font-size: 1.4rem;
+}

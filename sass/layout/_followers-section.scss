@@ -1,0 +1,15 @@
+.followers-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 0 2.4rem 4.6rem;
+
+    position: relative;
+    z-index: 2;
+
+    @include media-screen-min($bp-desktop) {
+        flex-direction: row;
+        gap: 3rem;
+        padding: 0 16.5rem 7.6rem;
+    }
+}
